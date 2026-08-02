@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = "http://localhost:5000/api/resume";
+const API = "h${process.env.REACT_APP_API_URL}/resume";
 
 export const getAllResumes = async () => {
 
