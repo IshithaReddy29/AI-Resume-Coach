@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = "${process.env.REACT_APP_API_URL}/api/ai";
+const API = `${process.env.REACT_APP_API_URL}/ai`;
 
 export const getLatestAnalysis = async () => {
     const token = localStorage.getItem("token");

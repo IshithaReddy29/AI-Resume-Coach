@@ -44,7 +44,7 @@ useEffect(() => {
             const token = localStorage.getItem("token");
 
             const response = await axios.get(
-                "${process.env.REACT_APP_API_URL}/api/resume",
+                `${process.env.REACT_APP_API_URL}/resume`,
                 {
                     headers: {
                         Authorization: `Bearer ${token}`
