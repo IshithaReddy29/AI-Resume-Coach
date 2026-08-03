@@ -33,9 +33,9 @@ An AI-powered resume analysis platform that helps users improve their resumes by
 ## Project Structure
 
 AI-Resume-Coach/
-├── client/
-├── server/
-├── README.md
+- client/
+- server/
+- README.md
 
 ## Installation
 
