@@ -24,7 +24,7 @@ function ResumeDetails() {
 
         }
 
-    },[]);
+    },[id]);
 
     useEffect(() => {
 
