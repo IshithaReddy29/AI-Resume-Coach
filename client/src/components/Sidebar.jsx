@@ -2,7 +2,6 @@ import {
     FaChartPie,
     FaFileAlt,
     FaUpload,
-    FaRobot,
     FaUser,
     FaSignOutAlt
 } from "react-icons/fa";

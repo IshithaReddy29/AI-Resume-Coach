@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState,useCallback } from "react";
 import { useParams } from "react-router-dom";
 import { getResumeById } from "../services/historyService";
 import "../styles/ResumeDetails.css";
@@ -10,13 +10,7 @@ function ResumeDetails() {
 
     const [resume, setResume] = useState(null);
 
-    useEffect(() => {
-
-        fetchResume();
-
-    }, []);
-
-    const fetchResume = async () => {
+    const fetchResume = useCallback( async () => {
 
         try {
 
@@ -30,7 +24,15 @@ function ResumeDetails() {
 
         }
 
-    };
+    },[]);
+
+    useEffect(() => {
+
+        fetchResume();
+
+    }, [fetchResume]);
+
+    
 
     if (!resume) {
 
